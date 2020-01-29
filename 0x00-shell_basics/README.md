@@ -1,0 +1,1 @@
+This directory contain the scripts that I create in Holberton
