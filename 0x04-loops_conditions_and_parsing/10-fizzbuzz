@@ -5,13 +5,13 @@ do
     if [ $((i % 3)) == 0 ] && [ $((i % 5)) == 0 ]
     then
         echo "FizzBuzz"
-    fi
-    if [ $((i % 3)) == 0 ]
+    elif [ $((i % 3)) == 0 ]
     then
         echo "Fizz"
-    fi
-    if [ $((i % 5)) == 0 ]
+    elif [ $((i % 5)) == 0 ]
     then
         echo "Buzz"
+    else
+        echo "$i"
     fi
 done
