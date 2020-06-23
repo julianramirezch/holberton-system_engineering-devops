@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Bash script that displays To infinity and beyond indefinitely, With a sleep 2 in between each iteration, I am invincible!!! when receiving a SIGTERM signal
 echo $$ > /var/run/holbertonscript.pid
-trap "echo I hate the kill command"; "sudo rm -f /var/run/holbertonscript.pid; exit" SIGTERM
+trap "echo I hate the kill command; sudo rm -f /var/run/holbertonscript.pid; exit" SIGTERM
 trap "echo Y U no love me?!" SIGINT
 trap "sudo rm -f /var/run/holbertonscript.pid; exit" SIGQUIT
 while ((1))
