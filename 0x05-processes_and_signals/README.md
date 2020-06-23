@@ -22,15 +22,15 @@
 
 | Name | Description                    |
 | ------------- | ------------------------------ |
-| `1-for_holberton_school`      |   Bash script that displays Holberton School 10 times.   |
-| `2-while_holberton_school`      |    Bash script that displays Holberton School 10 times. |
-| `3-until_holberton_school`   |  Bash script that displays Holberton School 10 times  |
-| `4-if_9_say_hi`      |Bash script that displays Holberton School 10 times, but for the 9th iteration, displays Holberton School and then Hi on a new line.|
-| `5-4_bad_luck_8_is_your_chance`      | This script is displaying "Holberton School" 10 times, bad luck for the 4th loop iteration and good luck for the 8th loop iteration.|
-| ` 6-superstitious_numbers`      |  Bash script that displays numbers from 1 to 20, displays 4 and then bad luck from China for the 4th loop iteration, displays 9 and then bad luck from Japan for the 9th loop iteration, displays 17 and then bad luck from Italy for the 17th loop iteration   |
-| `7-clock`      |  Bash script that displays the time for 12 hours and 59 minutes  |
-| `8-for_ls`      |   Bash script that displays The content of the current directory |
-| `9-to_file_or_not_to_file`      |   Bash script that gives you information about the holbertonschool file |
+| `0-what-is-my-pid`      |   Bash script that displays its own PID.  |
+| `1-list_your_processes`      |    ash script that displays a list of currently running processes. |
+| `2-show_your_bash_pid`   |  Bash script that displays lines containing the bash word, thus allowing you to easily get the PID of your Bash process. |
+| `3-show_your_bash_pid_made_easy`      |Bash script that displays the PID, along with the process name, of processes whose name contain the word bash withou ps command|
+| `4-to_infinity_and_beyond`      | Bash script that displays To infinity and beyond indefinitely.|
+| ` 5-kill_me_now`      |  BBash script that kills 4-to_infinity_and_beyond process. |
+| `6-kill_me_now_made_easy`      |  Bash script that kills 4-to_infinity_and_beyond process without kill command  |
+| `7-highlander`      |   Bash script that displays To infinity and beyond indefinitely, With a sleep 2 in between each iteration, I am invincible!!! when receiving a SIGTERM signal |
+| `8-beheaded_process`      |   Bash script that kills the process 7-highlander |
 | `10-fizzbuzz`      | Bash script that displays numbers from 1 to 100 FIZZBUZZ |
 | `100-read_and_cut`      |  Bash script that displays the content of the file /etc/passwd |
 | `101-tell_the_story_of_passwd`      |   Bash script that displays the content of the file /etc/passwd, using the while loop + IFS |
