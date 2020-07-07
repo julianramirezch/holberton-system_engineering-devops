@@ -2,5 +2,5 @@
 #script that displays The content of the current directory
 for entry in *
 do
-  echo "$entry" | cut --delimiter="-" -f2
+  echo "$entry" 
 done
