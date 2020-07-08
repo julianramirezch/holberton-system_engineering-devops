@@ -19,13 +19,11 @@
 
 | Name | Description                    |
 | ------------- | ------------------------------ |
-| `__init__.py`      |  With this file, the folder will become a Python module   |
-| `models/base.py`      |    Class Base |
-| `models/rectangle.py`   | Class Rectangle   |
-| `models/square.py`      | Class Square|
-| `tests/test_models/test_base.py`      | Test Class Base |
-| `tests/test_models/test_rectangle.py`      |  Test Class Rectangle   |
-| `tests/test_models/test_square.py`      |  Test Class Square   |
+| `0-localhost`      |  Localhost   |
+| `1-wildcard`      |    All IPs |
+| `2-change_your_home_IP`   | Bash script that configures an Ubuntu server with the below requirements.  |
+| `3-show_attached`      | Bash script that displays all active IPv4 IPs on the machine it’s executed on|
+| `4-port_listening_on_localhost`      | Bash script that listens on port 98 on localhost |
 
 ## Author: 
 ### Julian Ramirez <julianramirezch1@gmail.com>
