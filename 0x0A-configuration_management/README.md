@@ -1,7 +1,7 @@
-<H1 align="center"> 0x08. Networking basics #1 </H1>
+<H1 align="center">0x0A Configuration management </H1>
 
 <p align="center">
-   <a href="https://www.linux.org/"><img src="https://cdn.pixabay.com/photo/2013/07/13/13/41/bash-161382_960_720.png" width="170" height="170"/></a>
+   <a href="https://puppet.com/"><img src="https://d33wubrfki0l68.cloudfront.net/879b618f43e80e82627164cb764f0b095b5b266c/d2c97/images/logos/puppet-logo-black.svg" width="170" height="170"/></a>
 
 <p align="center"> 
    <b>Holberton School Bogotá D.C</b>
@@ -9,21 +9,18 @@
 ----
 <H3> General </H3>
    
-    What is localhost/127.0.0.1
-    What is 0.0.0.0
-    What is /etc/hosts
-    How to display your machine’s active network interfaces
+    What is puppet
+    Basic puppet instruction
+    How to use puppet
 
 
 ### Tasks:
 
 | Name | Description                    |
 | ------------- | ------------------------------ |
-| `0-localhost`      |  Localhost   |
-| `1-wildcard`      |    All IPs |
-| `2-change_your_home_IP`   | Bash script that configures an Ubuntu server with the below requirements.  |
-| `3-show_attached`      | Bash script that displays all active IPv4 IPs on the machine it’s executed on|
-| `4-port_listening_on_localhost`      | Bash script that listens on port 98 on localhost |
+| `0-create_a_file.pp`      |  create a file in /tmp   |
+| `1-install_a_package.pp`      |     install puppet-lint package |
+| `2-execute_a_command.pp`   | create a manifest that kills a process named killmenow  |
 
 ## Author: 
 ### Julian Ramirez <julianramirezch1@gmail.com>
