@@ -3,6 +3,6 @@
 sudo apt-get -y update
 sudo apt-get -y install nginx
 sudo echo "Holberton School" | sudo tee /var/www/html/index.html
-path="/etc/nginx/sties-enabled/default"
+path="/etc/nginx/sites-enabled/default"
 sudo sed -i "/server_name _;\n\tredirect_me rewrite ^/(.*)$ https://millonarios.com.co/ permanent;" "$path"
 sudo service nginx start
