@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Redirect
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo echo "Holberton School" | sudo tee /var/www/html/index.html
+rewrite="s/location /redirect_me rewrite ^/(.*)$ https://millonarios.com.co/ permanent;"
+path="/etc/nginx/sties-enabled/default"
+sudo sed -i "$rewrite" "$path"
+sudo service nginx start
