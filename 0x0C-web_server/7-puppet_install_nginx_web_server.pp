@@ -1,11 +1,11 @@
 # Puppet configuration
 
 exec { 'update':
-    command => '/usr/bin/apt-get -y update',
+    command => '/usr/bin/env apt-get -y update',
 }
 
 exec { 'install':
-    command => '/usr/bin/apt-get install -y nginx',
+    command => '/usr/bin/env apt-get -y install nginx',
 }
 
 exec {'/usr/bin/env echo "Holberton School" > /var/www/html/index.nginx-debian.html':}
