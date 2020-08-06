@@ -9,5 +9,5 @@ package { 'nginx':
 }
 
 exec { '/usr/bin/echo "Holberton School" > /var/www/html/index.nginx-debian.html':}
-exec {'sed -i "/server_name _;/ a\\\trewrite ^/redirect_me http://www.millonarios.com.co permanent;" /etc/nginx/sites-available/default':}
-exec {'service nginx restart':}
+exec {'/usr/bin/sed -i "/server_name _;/ a\\\trewrite ^/redirect_me http://www.millonarios.com.co permanent;" /etc/nginx/sites-available/default':}
+exec {'/usr/sbin/service nginx restart':}
