@@ -9,5 +9,5 @@ package { 'nginx':
 }
 
 exec { 'configuration':
-    command => 'echo "Holberton School" | sudo tee /var/www/html/index.html; sed -i "/server_name _;/ a\\\trewrite ^/redirect_me http://www.millonarios.com.co permanent;" /etc/nginx/sites-available/default; service nginx start',
+    command => 'sudo echo "Holberton School" | sudo tee /var/www/html/index.html; sudo sed -i "/server_name _;/ a\\\trewrite ^/redirect_me http://www.millonarios.com.co permanent;" /etc/nginx/sites-available/default; sudo service nginx start',
 }
