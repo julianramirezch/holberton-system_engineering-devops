@@ -8,6 +8,6 @@ package { 'nginx':
     ensure => installed,
 }
 
-exec { 'configuration':
-    command => 'sudo echo "Holberton School" | sudo tee /var/www/html/index.html; sudo sed -i "/server_name _;/ a\\\trewrite ^/redirect_me http://www.millonarios.com.co permanent;" /etc/nginx/sites-available/default; sudo service nginx start',
-}
+exec { 'echo "Holberton School" | sudo tee /var/www/html/index.html':}
+exec {'sed -i "/server_name _;/ a\\\trewrite ^/redirect_me http://www.millonarios.com.co permanent;" /etc/nginx/sites-available/default':}
+exec {'service nginx restart':}
