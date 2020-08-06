@@ -1,8 +1,8 @@
 # Puppet configuration
 
 package { 'nginx':
-    provider => apt,
     ensure   => 'installed',
+    name     => 'nginx',
 }
 
 exec {'/usr/bin/env echo "Holberton School" > /var/www/html/index.nginx-debian.html':}
