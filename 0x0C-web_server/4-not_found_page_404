@@ -5,6 +5,5 @@ sudo apt-get -y install nginx
 sudo echo "Holberton School" | sudo tee /var/www/html/index.html
 sudo echo "Ceci n'est pas une page" | sudo tee /var/www/html/404_error.html
 sudo sed -i "/server_name _;/ a\\\trewrite ^/redirect_me http://www.millonarios.com.co permanent;" /etc/nginx/sites-available/default
-sudo sed -i "/redirect_me/ a\\\terror_page 404 /404_error.html;" /etc/nginx/sites-available/default
 sudo sed -i '\n\n\terror_page 404 \/404_error.html;\n\tlocation = \/404_error.html {\n\t\troot \/usr\/share\/nginx\/html;\n\t\tinternal;\n\t}/' /etc/nginx/sites-available/default
 sudo service nginx restart
