@@ -2,6 +2,8 @@
 # Redirect
 sudo apt-get -y update
 sudo apt-get -y install nginx
-sudo echo "Ceci n'est pas une page" | sudo tee /var/www/html/404_error.html
-sudo sed -i '43a\    location \/ {\n        try_files $uri $uri\/ =404;\n    }\n    error_page 404 /404.html;' /etc/nginx/sites-available/default
 sudo service nginx start
+sudo echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
+sudo sed -i '43a\    location \/ {\n        try_files $uri $uri\/ =404;\n    }\n    error_page 404 /404.html;' /etc/nginx/sites-available/default
+sudo service nginx restart
+sudo service nginx reload
