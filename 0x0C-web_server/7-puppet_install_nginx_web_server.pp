@@ -8,14 +8,6 @@ package { 'nginx':
     ensure => installed,
 }
 
-exec { 'update':
-    command => '/usr/bin/echo "Holberton School" | sudo tee /var/www/html/index.html',
-}
-
-exec { 'sed':
-    command => '/usr/bin/sed -i "/server_name _;/ a\\\trewrite ^/redirect_me http://www.millonarios.com.co permanent;" /etc/nginx/sites-available/default',
-}
-
-exec { 'service':
-    command => '/usr/sbin/service nginx start',
+exec { 'configuration':
+    command => '/usr/bin/echo "Holberton School" | sudo tee /var/www/html/index.html'; '/usr/bin/sed -i "/server_name _;/ a\\\trewrite ^/redirect_me http://www.millonarios.com.co permanent;" /etc/nginx/sites-available/default'; service nginx start,
 }
