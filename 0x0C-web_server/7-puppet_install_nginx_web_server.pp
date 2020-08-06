@@ -8,12 +8,8 @@ package { 'nginx':
     ensure => installed,
 }
 
-file { 'index.html':
-    ensure  => file,
-    path    => '/etc/var/www/index.html',
-    content => 'Holberton School',
-}
-
-exec { 'sed':
+exec { 'update':
+    command => '/usr/bin/echo "Holberton School" | sudo tee /var/www/html/index.html',
     command => '/usr/bin/sed -i "/server_name _;/ a\\\trewrite ^/redirect_me http://www.millonarios.com.co permanent;" /etc/nginx/sites-available/default',
+    command => '/usr/sbin/service nginx start',
 }
