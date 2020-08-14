@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# add a custom Nginx response header.
+sudo apt-get -y update
+sudo apt-get -y install nginx
+location="\\\\t\tadd_header X-Served-By \$hostname;"
+sudo sed -i "33i $location" /etc/nginx/sites-enabled/default
+sudo service nginx restart
