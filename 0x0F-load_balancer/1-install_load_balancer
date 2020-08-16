@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# script configure load balancer
+
+sudo add-apt-repository -y ppa:vbernat/haproxy-1.7
+sudo apt update -y
+sudo apt install -y haproxy
+echo "frontend http_holb_front
+bind *:80
+mode http
+default_backend holb_back
+backend holb_back
+balance roundrobin
+server 1467-web-01 34.73.118.163:80 check
+server 1467-web-02 34.73.122.60:80 check
+" | sudo tee /etc/haproxy/haproxy.cfg
+sudo service haproxy restart
