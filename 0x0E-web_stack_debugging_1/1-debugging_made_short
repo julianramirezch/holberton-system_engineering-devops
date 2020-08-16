@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # make your fix short and sweet
-sudo cat /etc/nginx/sites-available/default > /etc/nginx/sites-enabled/default
+cat /etc/nginx/sites-available/default > /etc/nginx/sites-enabled/default
 sudo service nginx restart
 sudo pkill -o nginx
