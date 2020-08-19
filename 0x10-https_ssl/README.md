@@ -21,6 +21,8 @@
 | ------------- | ------------------------------ |
 | `0-https_abc`      |  HTTPS    |
 | `1-world_wide_web`      |    Bash script that will display information about subdomains.k |
+| `2-haproxy_ssl_termination`      |    https config file |
+| `100-redirect_http_to_https`      |    redirect https config file |
 
 
 ## Author: 
