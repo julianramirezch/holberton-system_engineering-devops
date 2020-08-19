@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Run ngnix as nginx
+sudo pkill -f apache2
+chmod 700 /etc/nginx/nginx.conf
+sed -i -E 's/(listen.*)80 /\18080 /g' /etc/nginx/sites-enabled/default
+sudo -u nginx nginx
