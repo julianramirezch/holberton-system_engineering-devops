@@ -19,10 +19,9 @@
 
 | Name | Description                    |
 | ------------- | ------------------------------ |
-| `0-iamsomeonelese`      |   Bash script that accepts one argument    |
-| `1-world_wide_web`      |    Bash script that will display information about subdomains.k |
-| `2-haproxy_ssl_termination`      |    https config file |
-| `100-redirect_http_to_https`      |    redirect https config file |
+| `0-iamsomeonelese`      |   Run software as another user  |
+| `1-run_nginx_as_nginx`      |    Run Nginx as Nginx |
+| `100-fix_in_7_lines_or_less`      |   7 lines or less  |
 
 
 ## Author: 
