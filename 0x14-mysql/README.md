@@ -1,7 +1,7 @@
 <H1 align="center"> 0x14. MySQL </H1>
 
 <p align="center">
-   <a href="https://www.linux.org/"><img src="https://cdn.pixabay.com/photo/2013/07/13/13/41/bash-161382_960_720.png" width="170" height="170"/></a>
+  <a href="https://www.mysql.com/"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/62/MySQL.svg/1920px-MySQL.svg.png" width="220" height="170"/></a>
 
 <p align="center"> 
    <b>Holberton School Bogotá D.C</b>
@@ -20,12 +20,9 @@
 
 | Name | Description                    |
 | ------------- | ------------------------------ |
-| `0-transfer_file`      |  Bash script that transfers a file from our client to a serve key ~/.ssh/holberton with the user ubuntu   |
-| `1-install_nginx_web_server`      |    Bash script that Install nginx web server |
-| `2-setup_a_domain_name`   | Domain Name |
-| `3-redirection`   | Bash script that Configure your Nginx server so that /redirect_me is redirecting to another page |
-| `4-not_found_page_404`   | Bash Script that Configure your Nginx server to have a custom 404 page that contains the string Ceci n'est pas une page |
-
+| `4-mysql_configuration_primary`      |  Master Server  |
+| `4-mysql_configuration_replica`      |    Slave Server|
+| `5-mysql_backup`   | script that generates a MySQL dump and creates a compressed archive out of it|
 
 
 
