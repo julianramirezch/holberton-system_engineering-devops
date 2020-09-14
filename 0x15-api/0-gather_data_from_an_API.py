@@ -30,4 +30,5 @@ if __name__ == "__main__":
     todo_url = 'https://jsonplaceholder.typicode.com/users/{}/todos/'.format(
         user_id)
     empl_url = 'https://jsonplaceholder.typicode.com/users/{}'.format(user_id)
-    make_request(todo_url, empl_url)
+    if len(argv) == 2:
+        make_request(todo_url, empl_url)
