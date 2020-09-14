@@ -2,7 +2,7 @@
 ''' Python script that, using a REST API, for a given employee ID, returns
 information about his/her todo list progress '''
 import requests
-from sys import argv
+import sys
 
 
 def make_request(todo, empl, user_id):
@@ -29,8 +29,7 @@ def make_request(todo, empl, user_id):
 
 
 if __name__ == "__main__":
-    user_id = argv[1]
+    user_id = sys.argv[1]
     todo_url = 'https://jsonplaceholder.typicode.com/todos'
     empl_url = 'https://jsonplaceholder.typicode.com/users/{}'.format(user_id)
-    if len(argv) == 2:
-        make_request(todo_url, empl_url, int(user_id))
+    make_request(todo_url, empl_url, int(user_id))
