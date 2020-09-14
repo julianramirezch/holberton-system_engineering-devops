@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 ''' Python script to export data in the JSON format.'''
+import json
 import requests
 from sys import argv
-import json
 
 
 def make_request(todo, empl, user_id):

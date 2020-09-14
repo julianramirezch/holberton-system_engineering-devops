@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 ''' Python script to export data in the CSV format'''
+import csv
 import requests
 from sys import argv
-import csv
 
 
 def make_request(todo, empl, user_id):
