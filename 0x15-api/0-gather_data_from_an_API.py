@@ -5,14 +5,14 @@ import requests
 from sys import argv
 
 
-def make_request(todo, empl):
+def make_request(todo, empl, user_id):
     ''' Make request to url '''
     titles = []
     response_todo = requests.get(todo)
     if response_todo.status_code == 200:
-        completed = 0
         for task, i in enumerate(response_todo.json()):
-            if i.get('completed') is True:
+            completed = 0
+            if i.get('userId') == user_id and i.get('completed') is True:
                 completed += 1
                 titles.append(i.get('title'))
 
@@ -27,8 +27,7 @@ def make_request(todo, empl):
 
 if __name__ == "__main__":
     user_id = argv[1]
-    todo_url = 'https://jsonplaceholder.typicode.com/users/{}/todos/'.format(
-        user_id)
+    todo_url = 'https://jsonplaceholder.typicode.com/todos'
     empl_url = 'https://jsonplaceholder.typicode.com/users/{}'.format(user_id)
     if len(argv) == 2:
-        make_request(todo_url, empl_url)
+        make_request(todo_url, empl_url, int(user_id))
