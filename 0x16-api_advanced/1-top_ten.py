@@ -12,7 +12,7 @@ def top_ten(subreddit):
     headers = {
         'User-Agent': ua,
     }
-    url = 'https://www.reddit.com/r/{}/top/.json?=10'.format(subreddit)
+    url = 'https://www.reddit.com/r/{}/hot/.json?=10'.format(subreddit)
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
         children = response.json().get('data').get('children')
