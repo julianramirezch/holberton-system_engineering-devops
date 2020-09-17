@@ -19,3 +19,5 @@ def top_ten(subreddit):
         for idx, i in enumerate(children):
             if idx < 10:
                 print(i.get('data').get('title'))
+    else:
+        print(None)
