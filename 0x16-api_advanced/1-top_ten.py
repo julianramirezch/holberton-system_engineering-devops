@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 ''' Python script to extract top ten titles from subreddit '''
+
 import requests
 
 
